@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.hero {
+    grid-column: span 3;
+    text-align: center;
+    background: url('../img/hero.jpg') no-repeat center/cover;
+    color: white;
+    padding: 3rem 1rem;
+}
+.features {
+    text-align: center;
+}
+.feature-item {
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Flex Layout for Cards */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card h3 {
+    margin: 10px 0;
+}
+.card p {
+    padding: 0 10px;
+}
+
+/* Guide Page */
+.guide {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+.guide .grid-item {
+    padding: 1rem;
+}
+
+.pg3Img{
+    height: 400px;
+    width: 400px;
+}
